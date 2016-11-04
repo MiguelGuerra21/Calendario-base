@@ -62,9 +62,10 @@ public class CalendarioPiki
     /**
      * metodo que devuelve la fecha actual
      */
-    public String mostrarFecha() {
-        
-}
+public String mostrarFecha(){
+       String Fecha = String.format("%02d",dia) + "-" + String.format("%02d",mes) + "-" + String.format("%02d",año);
+       return Fecha;
+    }
 }
 
 
