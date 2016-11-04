@@ -56,6 +56,7 @@ public class CalendarioPiki
         mes = mes + 1;
     }
     else {
+        mes = 1;
         año = año + 1;
 }
 }
