@@ -37,6 +37,7 @@ public class CalendarioPiki
         dia = d;
         mes = m;
         año = a;
+        
     }
     
     /**
@@ -45,19 +46,25 @@ public class CalendarioPiki
      * Todos los meses van a tener para nosotros 30 días
      */
     public void avanzarFecha () {
-        if(dia != 30) {
+        if(dia < 30) {
             
         dia = dia + 1;
         
     }
-    else {
-        System.out.println ("Fecha no valida");
+    else if (mes <12){
+        dia = 1;
+        mes = mes + 1;
     }
+    else {
+        año = año + 1;
+}
 }
     /**
      * metodo que devuelve la fecha actual
      */
     public String mostrarFecha() {
-        return (dia + "-" + mes + "-" + año);
-    }
+        
 }
+}
+
+
